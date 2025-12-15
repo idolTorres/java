@@ -1,0 +1,7 @@
+package com.arielmtorres.ecomerce.exceptions;
+
+public class ProductNotFoundException extends RuntimeException {
+    public ProductNotFoundException(Long id) {
+        super("No se encontró el producto con id: " + id);
+    }
+}
